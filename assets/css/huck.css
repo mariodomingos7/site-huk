@@ -1,0 +1,124 @@
+{ /*todo o site fica com a fonte Arial*/
+    font-family:Arial;
+}
+body {
+    margin:0;
+    padding:0;
+   
+}
+    header {
+        display:flex; /*flex = reta, um do lado do outro*/
+        justify-content:center; /*para ficar no centro*/
+        height: 100px; /*largura do cabeçalho*/
+        background-color: turquoise;
+}
+.container {
+    display:flex;/*para ficar do mesmo tamanho*/
+    justify-content: space-between; /*fica um a esquerda e outro a direita*/
+    width:990px;
+      
+}
+.nome{
+background-color: yellowgreen;
+    display: flex;
+    align-items: center; /*alinha o logo no centro na vertical*/
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.menu {
+    display: flex;
+    align-items: center;/*para ficar no centro na orizontal*/
+   
+}
+nav ul, 
+nav li {
+    list-style: none;/*para tirar os pontos*/
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;/*para o menu ficar lado a lado na orizontal*/
+}
+nav a {
+    display: block;/*para separar um do outro*/
+    padding: 15px;/*margem interna*/
+    text-decoration: none;/*para tirar o sublinado da frase*/
+    text-transform: uppercase; /*para ficar em maiusculo*/
+    color: #727272; /*cor das letras*/
+}
+nav .active a,    /*ficar ativado*/
+nav a:hover {     /*para mudar de cor ao passar o mouse*/
+    background-color:yellowgreen;
+    color:#ffffff; /*cor das letras ao passar o mouse fica branca*/
+}
+#banner {
+    display:flex;
+    justify-content: center;  /*centraliza o conteudo do banner*/
+    background-image:url('../images/huck1.jpg');
+    background-position: center;  /*centralisa a imagem*/
+    background-size: cover;  /*para imagem ficar do tamanho da 'section' ou tela, pc, cel, tab*/
+    height: 670px;  /*altura da imagem*/
+}
+
+#banner {
+    display: flex; /*para ficar um do lado do outro*/
+    justify-content:center;
+    justify-content: space-between;
+    }
+    .banner_headline {
+        width: 200px;
+        height: 150px;
+        background-color: yellowgreen;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+    .banner_headline h1  {
+        color:#0000BB;
+        font-size:30px;
+        text-shadow:0px 1px 0px red;  
+        margin:0;
+        padding:0;
+        max-width:320px; 
+    }
+    .banner_headline h2 {
+        color:#0000BB;
+        font-size:18px;
+        text-shadow:0px 1px 0px red;
+        margin:0;
+        padding:0;
+        max-width:320px;
+        margin-top:30px;
+       
+    }  
+    .dog {
+        margin: 0;
+        padding: 0;
+        background-color: yellowgreen;
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
+  
+ #geral {
+        display:flex;
+        justify-content:center;
+     } 
+#geral section {
+    flex:2;
+}    
+article .thumbnail {
+    margin-top: 30px;
+}
+article .thumbnail img {
+    width: 100%;
+    height: auto;
+} 
+article {
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
